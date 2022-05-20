@@ -2,9 +2,9 @@ import './Nav.css';
 
 function Nav() {
   return (
-    <div className="Nav">
+    <nav className="navbar navbar-expand-md navbar-light">
       NAV
-    </div>
+    </nav>
   );
 }
 
