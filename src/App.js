@@ -9,7 +9,7 @@ function App() {
   <div className="App">
     <Nav />
     <div className='common-container'>
-      <div className='px-4 mt-md-4 container'>
+      <div className='mb-4 mb-lg-5 container'>
         <Main_Image />
       </div>
       <div className='px-4 mt-md-4 container'>
