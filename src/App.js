@@ -17,7 +17,7 @@ function App() {
       <div className='px-4 mt-md-4 container'>
         <Content_Image data={data.introduce} />
         <Buy />
-        <Content_Image data={data.team} />
+        <Content_Image data={data.team}/>
       </div>
     </div>
     <Footer />
