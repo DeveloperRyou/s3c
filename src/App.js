@@ -5,7 +5,29 @@ import Content_Image from './components/Content_Image';
 import Buy from './components/Buy';
 import Footer from './components/Footer';
 import {data} from './data/components_data.js';
+import { Routes, Route } from 'react-router-dom';
+import Layout from './components/Layout';
 
+function App() {
+  return (
+    <div className='App'>
+      <Routes>
+        <Nav />
+        <Route element={<Layout />}>
+          <Main_Image />
+          <div className='px-4 mt-md-4 container'>
+            <Route path='/introduce' element={<Content_Image data={data.introduce}/>}/>
+            <Route path='/buy' element={<Buy />}/>
+            <Route path='/team' element={<Content_Image data={data.team} />}/>
+          </div>
+        </Route>
+      </Routes>
+      <Footer />
+    </div>
+  );
+}
+
+/*
 function App() {
   return (
   <div className="App">
@@ -24,5 +46,6 @@ function App() {
   </div>
   );
 }
+*/
 
 export default App;
