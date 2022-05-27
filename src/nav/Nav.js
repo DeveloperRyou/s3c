@@ -13,15 +13,6 @@ export default function Nav() {
     {id: 6, title: 'PARTNER', url: 'partner'},
   ];
 
-  const lis = [];
-  for (let i=0; i<contents.length; i++) {
-    lis.push(
-      <li className="nav-item" key={contents[i].id}>
-        <Link className="nav-link" activeClass="active" smooth spy to={contents[i].url}>{contents[i].title}</Link>
-      </li>
-    )
-  }
-
   return (
     <>
     <nav id={styles.navbar} className="navbar navbar-expand-md navbar-light">
@@ -34,7 +25,11 @@ export default function Nav() {
         </button>
         <div className={`collapse navbar-collapse ${styles.navbarSupportedContent}`} id="navbarSupportedContent">
           <ul className="navbar-nav me-auto mb-2 mb-lg-0">
-            {lis}
+            {contents.map((content) => 
+              <li className="nav-item" key={content.id}>
+              <Link className="nav-link" activeClass="active" smooth spy to={content.url}>{content.title}</Link>
+            </li>
+            )}
           </ul>
           <div className="navbar-nav" id={styles.navSocial}>
             <a href="https://www.instagram.com/stupidcatcharityclub/"><FontAwesomeIcon className={styles.socialIcon} icon={faInstagram} /></a> &nbsp;

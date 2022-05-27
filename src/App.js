@@ -1,3 +1,4 @@
+import React from 'react';
 import './App.css';
 import Nav from './nav/Nav';
 import Main_Image from './components/Main_Image';
@@ -11,9 +12,7 @@ function App() {
   <div className="App">
     <Nav />
     <div className='common-container'>
-      <div className='mb-4 mb-lg-5 container'>
-        <Main_Image />
-      </div>
+      <Main_Image />
       <div className='px-4 mt-md-4 container'>
         <Content_Image data={data.introduce} />
         <Buy />
@@ -24,5 +23,6 @@ function App() {
   </div>
   );
 }
+
 
 export default App;
