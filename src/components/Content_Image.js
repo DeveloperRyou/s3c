@@ -8,7 +8,7 @@ function Content_Image(props) {
        <div dangerouslySetInnerHTML={{__html: props.data.content}}></div>
       </div>
       <div className='my-lg-auto col-lg-4 col-12 offset-lg-1'>
-        <img className='img-fluid w-100' src='' onError={(e) => {e.target.src = '/alt.jpg'}}></img>
+        <img className='img-fluid w-100' src='' alt='' onError={(e) => {e.target.src = '/alt.jpg'}}></img>
       </div>
     </div>
   );
