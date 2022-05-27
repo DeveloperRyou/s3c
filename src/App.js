@@ -1,5 +1,6 @@
 import React from 'react';
 import './App.css';
+import 'bootstrap/dist/css/bootstrap.min.css';
 import Nav from './nav/Nav';
 import Main_Image from './components/Main_Image';
 import Content_Image from './components/Content_Image';
