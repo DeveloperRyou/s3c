@@ -1,0 +1,18 @@
+.nav-link {
+    text-align: end;
+    cursor: pointer;
+}
+
+.navSocial {
+    margin-left: 10px;
+    margin-right: 40px;
+}
+
+.socialIcon {
+    color: rgba(255,255,255,.5);
+    padding-left: 10px;
+}
+
+.socialIcon:hover {
+    color: rgba(255,255,255,.7);
+}
