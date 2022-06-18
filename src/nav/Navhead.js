@@ -1,7 +1,7 @@
 import "./Navhead.css";
 import { Link } from 'react-scroll';
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faInstagram, faTwitter, faTelegram, faDiscord } from "@fortawesome/free-brands-svg-icons";
+import { faTwitter, faTelegram, faDiscord } from "@fortawesome/free-brands-svg-icons";
 import Container from 'react-bootstrap/Container';
 import Navbar from 'react-bootstrap/Navbar';
 
@@ -32,10 +32,9 @@ export default function Navhead() {
           </ul>
         </Navbar.Collapse>
         <div className="navbar-nav d-none d-md-flex navSocial">
-          <a href="https://www.instagram.com/stupidcatcharityclub/"><FontAwesomeIcon className="socialIcon" icon={faInstagram} /></a> &nbsp;
-          <a href="https://twitter.com/SC3_M1"><FontAwesomeIcon className="socialIcon" icon={faTwitter} /></a> &nbsp;
+          <a href="https://twitter.com/SC3_M1/with_replies"><FontAwesomeIcon className="socialIcon" icon={faTwitter} /></a> &nbsp;
           <a href="https://t.me/StupidCatCharityClub"><FontAwesomeIcon className="socialIcon" icon={faTelegram} /></a> &nbsp;
-          <a href="https://discord.com/invite/6r44wVKYjb"><FontAwesomeIcon className="socialIcon" icon={faDiscord} /></a>
+          <a href="https://discord.gg/6r44wVKYjb"><FontAwesomeIcon className="socialIcon" icon={faDiscord} /></a>
         </div>
       </Navbar>
     </Container>
