@@ -1,13 +1,15 @@
 import './Components.css';
-import main_image from './main_image.jpg';
+import { Container } from 'react-bootstrap';
+import { Col } from 'react-bootstrap';
+import { Image } from 'react-bootstrap';
 
 function Main_Image() {
   return (
-    <div className='mb-4 mb-lg-5 container'>
-      <div className="px-0 col-12">
-      <img src={main_image} alt='' className="img-fluid px-0"></img>
-      </div>
-    </div>
+    <Container className='mb-4 mb-lg-5 px-0'>
+      <Col>
+        <Image fluid src='/main.jpg'></Image>
+      </Col>
+    </Container>
   );
 }
 

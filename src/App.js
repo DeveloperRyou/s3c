@@ -1,25 +1,33 @@
 import React from 'react';
 import './App.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import Navhead from './nav/Navhead';
-import Main_Image from './components/Main_Image';
-import Content_Image from './components/Content_Image';
-import Buy from './components/Buy';
-import Footer from './components/Footer';
+import Container from 'react-bootstrap/Container';
 import {data} from './data/components_data.js';
+import Navhead from './nav/Navhead';
+import Footer from './components/Footer';
+import Main_Image from './components/Main_Image';
+import Buy from './components/Buy';
+import Content from './components/Content';
+import Content_Single from './components/Content_Single';
+import Roadmap from './components/Roadmap';
 
 function App() {
   return (
   <div className="App">
     <Navhead />
-    <div className='common-container'>
+    <Container>
       <Main_Image />
-      <div className='px-4 mt-md-4 container'>
-        <Content_Image data={data.introduce} />
-        <Buy />
-        <Content_Image data={data.team}/>
-      </div>
-    </div>
+      <Content data={data.introduce}/>
+      <Buy />
+      <Content data={data.story}/>
+      <hr/>
+	    <Content_Single data={data.plan}/>
+      <Roadmap data={data.roadmap}/>
+      <hr/>
+      <Content data={data.team}/>
+      <hr/>
+      <Content_Single data={data.partner}/>
+    </Container>
     <Footer />
   </div>
   );
