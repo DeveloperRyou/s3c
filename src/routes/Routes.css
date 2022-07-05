@@ -1,0 +1,26 @@
+.undernav{
+  padding-top: var(--nav-height);
+}
+
+.text-vertical{
+  writing-mode: vertical-rl;
+  text-orientation: upright;
+  margin: auto;
+  font-size: 0.7rem;
+}
+
+.entry .content {
+  margin-top: -2rem;
+}
+
+@media screen and (min-width: 992px){
+  .entry .welcome {
+      margin-left: auto;
+      height: 230px;
+      margin-top: -230px !important;
+  }
+}
+
+.entry .welcome {
+  background-color: #000;
+}

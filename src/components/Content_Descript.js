@@ -1,4 +1,3 @@
-import './Components.css';
 import { Col } from 'react-bootstrap';
 
 function Content_Descript(props) {

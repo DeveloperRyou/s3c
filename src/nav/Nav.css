@@ -1,11 +1,11 @@
+.main nav {
+  min-height: var(--nav-height);
+  box-shadow:0 1px 10px -3px var(--gc3-color);
+}
+
 .nav-link {
     text-align: end;
     cursor: pointer;
-}
-
-.navSocial {
-    margin-left: 10px;
-    margin-right: 40px;
 }
 
 .socialIcon {

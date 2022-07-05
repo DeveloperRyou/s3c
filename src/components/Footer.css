@@ -1,0 +1,38 @@
+.footer-line {
+    width: 95%;
+    border-top: 1.5px solid white;
+}
+
+.footer-email{
+    color:white;
+    text-decoration: none;
+}
+
+.footer-email:hover{
+    color: var(--gc3-color);
+}
+
+.footer-logo{
+    max-height: 12rem;
+    display: flex;
+    margin: auto;
+}
+
+.footer-icon{
+    color: white;
+    padding-left: 1rem;
+}
+
+.footer-icon:hover{
+    color: var(--gc3-color);
+}
+
+.footer-small{
+    font-size: 0.8rem;
+}
+
+.footer-lastline {
+    display: block;
+    padding-top: 20px;
+    max-width: 100%;
+}

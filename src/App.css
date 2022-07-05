@@ -1,37 +1,38 @@
-.App {
-  text-align: left;
-  background-color: rgb(0, 0, 0);
-  color :white;
+::-webkit-scrollbar {
+  display: none;
+}
+
+:root {
+  --gc3-color : #17ffec;
+  --nav-height : 100px;
 }
 
 body {
   -ms-overflow-style: none;
 }
 
-::-webkit-scrollbar {
-  display: none;
-}
-
-:root {
-  --sc3-color : #17ffec; 
+.App {
+  text-align: left;
+  background-color: rgb(0, 0, 0);
+  color :white;
 }
 
 .common-p {
   text-align: justify;
 }
 
-.sc3-color {
-  color : var(--sc3-color);
+.gc3-color {
+  color : var(--gc3-color);
 }
 
-.sc3-bg {
-background-color: var(--sc3-color);
+.gc3-bg {
+  background-color: var(--gc3-color);
   color: black;
 }
 
-.sc3-button {
-  background-color: #000;
-  color: var(--sc3-color);
+.gc3-button-light {
+  background-color: var(--gc3-color);
+  color: #000;
   border-radius: 8px;
   border: 0;
   font-weight: 700;
@@ -41,7 +42,24 @@ background-color: var(--sc3-color);
   transition: .3s;
 }
 
-.sc3-button:hover {
-  color: #000;
+.gc3-button-light:hover {
   background-color: #fff;
+  color: #000;
+}
+
+.gc3-button-dark {
+  background-color: #000;
+  color: var(--gc3-color);
+  border-radius: 8px;
+  border: 0;
+  font-weight: 700;
+  font-size: 16px;
+  padding: 5%;
+  margin: auto auto;
+  transition: .3s;
+}
+
+.gc3-button-dark:hover {
+  background-color: #fff;
+  color: #000;
 }

@@ -1,35 +1,33 @@
 import React from 'react';
 import './App.css';
+import './Transition.css'
+import { Routes, Route, useLocation } from 'react-router-dom';
+import { TransitionGroup, CSSTransition } from "react-transition-group"
 import 'bootstrap/dist/css/bootstrap.min.css';
-import Container from 'react-bootstrap/Container';
-import {data} from './data/components_data.js';
-import Navhead from './nav/Navhead';
-import Footer from './components/Footer';
-import Main_Image from './components/Main_Image';
-import Buy from './components/Buy';
-import Content from './components/Content';
-import Content_Single from './components/Content_Single';
-import Roadmap from './components/Roadmap';
+import Entry from './routes/Entry';
+import Main from './routes/Main';
+import Notfound from './routes/Notfound';
 
 function App() {
+  const routes = [
+    { path : '/', name : 'Entry', Component: Entry},
+    { path : '/main/', name : 'Main', Component: Main},
+    { path : '*', name : 'Notfound', Component: Notfound}
+  ];
+  const location = useLocation();
+  
   return (
-  <div className="App">
-    <Navhead />
-    <Container>
-      <Main_Image />
-      <Content data={data.introduce}/>
-      <Buy />
-      <Content data={data.story}/>
-      <hr/>
-	    <Content_Single data={data.plan}/>
-      <Roadmap data={data.roadmap}/>
-      <hr/>
-      <Content data={data.team}/>
-      <hr/>
-      <Content_Single data={data.partner}/>
-    </Container>
-    <Footer />
-  </div>
+    <div className="App">
+      <TransitionGroup className="transition-group">
+        <CSSTransition key={location.pathname} timeout={1000} classNames="fade">
+          <Routes location={location}>
+            {routes.map( ({path, name, Component}) => (
+              <Route key={name} path={path} element={<Component />} />
+            ))}
+          </Routes>
+        </CSSTransition>
+      </TransitionGroup>
+    </div>
   );
 }
 

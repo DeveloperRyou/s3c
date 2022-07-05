@@ -1,4 +1,3 @@
-import './Components.css';
 import { Row } from 'react-bootstrap';
 import Content_Descript from './Content_Descript';
 import Content_Image from './Content_Image';

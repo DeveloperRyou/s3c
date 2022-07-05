@@ -1,4 +1,3 @@
-import './Components.css';
 import { Row } from 'react-bootstrap';
 
 function Content_Single(props) {

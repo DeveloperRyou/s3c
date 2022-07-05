@@ -1,0 +1,23 @@
+.transition-group {
+	position: relative;
+}
+  
+.fade-enter {
+	opacity: 0.2;
+  transform: translateY(10px);
+}
+ 
+.fade-enter-active {
+	opacity: 1;
+	transform: translateY(0px);
+	transition: all 1s ease;
+}
+  
+.fade-exit {
+	opacity: 0;
+}
+  
+.fade-exit-active {
+	opacity: 0;
+	transition: all 0s ease;
+}

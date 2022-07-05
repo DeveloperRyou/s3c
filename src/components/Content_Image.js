@@ -1,4 +1,3 @@
-import './Components.css';
 import Introduce from './image/Introduce';
 import Story from './image/Story';
 import Vipcard from './image/Vipcard';
